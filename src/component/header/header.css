@@ -1,0 +1,262 @@
+.header {
+  height: 200px;
+  width: 100%;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+/* header-top */
+.header-top {
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: 1px solid var(--main-color);
+}
+
+.header-top-menu {
+  display: none;
+  color: var(--main-color);
+  font-size: 40px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.heafer-top-phone,
+.header-top-text,
+.header-top-link {
+  font-size: 27px;
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+.heafer-top-phone i,
+.header-top-link i {
+  margin-right: 4px;
+}
+
+/* header-middle */
+.header-middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  height: 50%;
+}
+
+.header-middle-logo {
+  color: white;
+  display: flex;
+  gap: 5px;
+  font-size: 20px;
+  align-items: center;
+}
+
+.header-middle-logo i {
+  font-size: 43px;
+  margin: 0 6px;
+}
+
+.header-middle-search-box {
+  width: 700px;
+  background-color: white;
+  height: 60px;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.header-middle-search-box-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 50px;
+  padding-left: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  color: gray;
+}
+
+.header-middle-search-box i {
+  position: absolute;
+  top: 18px;
+  right: 13px;
+  font-size: 20px;
+  font-weight: 500;
+  color: gray;
+}
+
+.header-middle-cart-wrabber {
+  position: relative;
+}
+
+.cart-notify {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  color: white;
+  border-radius: 70%;
+  top: 4px;
+  right: -12px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+}
+
+.header-middle-cart-wrabber i {
+  font-size: 44px;
+  cursor: pointer;
+  color: white;
+}
+
+/* navbar */
+
+.navbar {
+  background-color: var(--main-color);
+  box-shadow: 0 0 1px 1px gray;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-link {
+  padding: 0 20px;
+  font-size: 21px;
+  font-weight: 600;
+  color: #525452;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link:hover {
+  background-color: snow;
+}
+
+/* media query */
+
+@media (max-width: 990px) {
+  .header-middle-search-box {
+    width: 600px;
+  }
+
+  .navbar-link {
+    padding: 0 17px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+@media (max-width: 920px) {
+  .header-middle-search-box {
+    width: 450px;
+  }
+
+  .header-top-text {
+    font-size: 17px;
+  }
+
+  .header-middle-logo {
+    font-size: 17px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 720px) {
+  .header {
+    height: 150px;
+  }
+
+  .header-top-text {
+    display: none;
+  }
+
+  .header-top-menu {
+    display: block;
+  }
+
+  .header-top {
+    height: 40%;
+  }
+
+  .header-middle {
+    flex-wrap: wrap;
+    height: 60%;
+  }
+
+  .header-middle-search-box {
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  .header-middle-logo {
+    display: none;
+  }
+
+  .header-middle-cart-wrabber i {
+    font-size: 30px;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 40px;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    align-items: flex-start;
+    z-index: 999;
+    transition: all 0.5s ease;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: max-content;
+    width: 100%;
+  }
+
+  .navbar-link {
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 520px) {
+  .header-top,
+  .header-middle {
+    padding: 0 15px;
+  }
+
+  .heafer-top-phone,
+  .header-top-text,
+  .header-top-link {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .header-middle-search-box {
+    width: 100%;
+    height: 40px;
+  }
+
+  .header-middle-search-box i {
+    top: 8px;
+  }
+
+  .header-middle-search-box-input {
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}

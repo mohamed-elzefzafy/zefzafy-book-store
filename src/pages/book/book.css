@@ -1,0 +1,109 @@
+.book {
+  padding: 30px;
+}
+
+.book-content {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.book-content-img {
+  width: 30%;
+  height: 300px;
+  object-fit: contain;
+  padding: 20px;
+  box-shadow: 0 0 1px 2px snow;
+  border-radius: 7px;
+  background-color: snow;
+  margin-right: 20px;
+}
+
+.book-content-info {
+  width: 60%;
+}
+
+.book-title {
+  font-size: 32px;
+}
+
+.book-author {
+  color: gray;
+  font-weight: 600;
+  font-size: 21px;
+  margin: 15px 0;
+}
+
+.book-author span {
+  color: teal;
+}
+
+.book-description {
+  width: 80%;
+  font-size: 21px;
+  line-height: 1.8;
+}
+
+.book-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: teal;
+  margin: 30px 0;
+}
+
+.book-icon {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-icon i {
+  font-size: 32px;
+  margin: 5px 0;
+}
+
+@media (max-width: 720px) {
+  .book {
+    padding: 30px 15px;
+  }
+
+  .book-title {
+    font-size: 20px;
+  }
+
+  .book-description {
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .book-content {
+    flex-direction: column;
+  }
+
+  .book-content-img {
+    width: 100%;
+  }
+
+  .book-content-info {
+    width: 100%;
+  }
+
+  .book-icons {
+    font-size: 15px;
+  }
+
+  .book-icon {
+    margin-right: 25px;
+  }
+
+  .book-icon i {
+    font-size: 22px;
+    margin: 5px 0;
+  }
+}

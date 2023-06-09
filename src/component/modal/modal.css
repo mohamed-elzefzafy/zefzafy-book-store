@@ -1,0 +1,177 @@
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0 , 0.7);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.modal-content {
+    width: 80%;
+    height:90%;
+    background-color: white;
+   display: flex;
+   align-items: flex-start;
+    justify-content: flex-start;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    
+}
+
+.modal-icon {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: crimson;
+    cursor: pointer;
+    font-size: 50px;
+    
+}
+
+.modal-content-img {
+    width: 40%;
+    height: 100%;
+}
+
+.modal-content-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.modal-content-info {
+    padding: 30px;
+    width: 60%;
+}
+
+.modal-content-info-title {
+    font-size: 40px;
+}
+
+
+.modal-content-info-stock {
+font-size: 21px;
+margin: 15px 0;
+}
+
+.modal-content-info-author {
+    font-size: 21px;
+    font-weight: 600;
+    margin: 15px 0;
+    color: teal;
+}
+
+.modal-content-info-author b,
+.modal-content-info-price b{
+    color: black;
+}
+
+.modal-content-info-price {
+    color: crimson;
+    font-size: 25px;
+    font-weight: 500;
+ 
+}
+
+.modal-add-to-cart {
+margin: 30px 0;
+}
+
+.modal-add-to-cart-input {
+margin-right: 15px;
+padding: 5px 10px;
+font-size: 25px;
+font-weight: 600;
+}
+
+.modal-add-to-cart-btn {
+padding: 5px 10px;
+font-size: 21px;
+font-weight: 600;
+border-radius: 7px;
+border: 1px solid green;
+color: green;
+cursor: pointer;
+background-color: transparent;
+transition: all 0.3s ease;
+}
+
+.modal-add-to-cart-btn i {
+margin-right: 5px;
+  }
+
+
+  .modal-add-to-cart-btn:hover {
+    color: white;
+    background-color:green;
+    }
+
+    .modal-content-info-link {
+        background-color: var(--primary-color);
+        padding: 10px 20px;
+        color: white;
+        border-radius: 7px;
+        font-size: 24px;
+        font-weight: 600;
+        width: max-content;
+        cursor: pointer;
+    }
+    
+
+
+
+    @media (max-width : 920px) {
+
+        .modal-content-img {
+       width: 30%;
+          
+        }
+        
+        
+        .modal-content-info {
+           width: 70%;
+          
+        }
+
+        .modal-content-info-title {
+            font-size: 21px;
+        }
+
+
+    }
+
+
+
+
+    @media (max-width : 720px) {
+      .modal-content {
+         width: 90%;
+         height: auto;
+            
+        } 
+
+        .modal-content-img {
+       display: none;
+          
+        }
+        
+        
+        .modal-content-info {
+            padding: 15px;
+           width: 100%;
+          
+        }
+
+
+        .modal-add-to-cart-btn {
+      margin-top: 10px;
+            }
+        
+    }
